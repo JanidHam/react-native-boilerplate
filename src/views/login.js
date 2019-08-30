@@ -1,27 +1,24 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment } from 'react'
 import { View } from 'react-native'
 import { connect } from 'react-redux'
 
 import Card from '@components/common/Card'
 import LoginForm from '@components/auth/Login'
-import Message from '@components/common/Message'
 
 import { loginAction } from '@redux/actions/auth'
 import DefaultLayout from '@layouts/Default'
 
 const LoginView = ({ dispatch, authState, navigation }) => {
-  const [showing, setShowing] = useState(false)
   if (authState.loggedIn) {
     // return navigation.replace('Home')
   }
 
   const handleSubmit = async ({ email, password }) => {
-    setShowing(!showing)
-    // const res = await dispatch(loginAction({ email, password }))
+    const res = await dispatch(loginAction({ email, password }))
 
-    // if (res === true) {
-    //   return navigation.replace('Home')
-    // }
+    if (res === true) {
+      return navigation.replace('Home')
+    }
   }
 
   return (
@@ -33,7 +30,6 @@ const LoginView = ({ dispatch, authState, navigation }) => {
           </Card>
         </View>
       </DefaultLayout>
-      <Message showing={showing} />
     </Fragment>
   )
 }
