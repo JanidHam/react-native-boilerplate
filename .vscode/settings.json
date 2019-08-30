@@ -1,0 +1,14 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveForeground": "#ffffff",
+    "titleBar.activeBackground": "#5092b6",
+    "titleBar.inactiveBackground": "#5092b6",
+  },
+  "editor.fontSize": 12.5,
+  "files.associations": {
+    "**/src/views/**/*.js": "javascriptreact",
+    "**/src/layouts/**/*.js": "javascriptreact",
+    "**/src/components/**/*.js": "javascriptreact",
+  },
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": ["src/*"],
+      "@i18n/*": ["src/i18n/*"],
+      "@redux/*": ["src/redux/*"],
+      "@views/*": ["src/views/*"],
+      "@assets/*": ["src/assets/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@services/*": ["src/services/*"],
+      "@components/*": ["src/components/*"],
+    }
+  },
+  "exclude": ["node_modules"]
+}
