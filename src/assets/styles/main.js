@@ -17,6 +17,13 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     shadowOpacity: 0.2,
   },
+  shadowLg: {
+    elevation: 10,
+    shadowOffset: { width: 1, height: 1 },
+    shadowColor: '#d3d7de',
+    shadowRadius: 10,
+    shadowOpacity: 1,
+  },
   mbBase: {
     marginBottom: config.mBase,
   },
